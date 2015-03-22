@@ -6,7 +6,7 @@ $(document).ready(function() {
         var name = $("#rsvp input[type=text]").val();
         
         $.ajax({
-            url: "http://mer.dev/answer/" + name + "/" + answer,
+            url: "/answer/" + name + "/" + answer,
         })
         .done(function( data ) {
             if ( console && console.log ) {
