@@ -1,0 +1,121 @@
+/* -----------------------------------------------------------------------------
+    Meyer's reset 2.0
+----------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// -----------------------------------------------------------------------------
+//    SASS Mixins and Variables
+// -----------------------------------------------------------------------------
+
+@mixin transition($transition: all 150ms ease-out) {
+   -webkit-transition: $transition;       /* Chrome 1-25, Safari 3.2+ */
+       -moz-transition: $transition;      /* Firefox 4-15 */
+           -o-transition: $transition;    /* Opera 10.50–12.00 */
+             transition: $transition;     /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+@mixin clearfix {
+    *zoom: 1;
+
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+    Global
+----------------------------------------------------------------------------- */
+
+/* Typography */
+
+a { 
+    text-decoration:none;
+}
+
+p, h1 {
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 18px;
+    line-height: 27px;
+    & span {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
+
+body p::selection, h1::selection { background:lighten($reddish, 40%) }
+body p::-moz-selection, h1::-moz-selection { background:lighten($reddish, 40%) }
+
+/* -----------------------------------------------------------------------------
+    Icons
+----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+    Layout
+----------------------------------------------------------------------------- */
+
+html {
+    cursor: pointer;
+    height: 100%;
+}
+
+body {
+    font: 200 normal 14px/21px "jaf-facitweb", Helvetica, Arial, sans-serif;
+    @include transition2(color ease-out $color-transition-speed, background-color ease-out $color-transition-speed);
+    overflow: hidden;
+    top: -200px;
+    left: -35%;
+    height: 100%;
+}
