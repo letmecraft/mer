@@ -63,28 +63,9 @@ h1 {
     font-weight: 400;
     letter-spacing: 1px; }
 
-body p::selection, h1::selection {
-  background: #faeceb; }
-
-body p::-moz-selection, h1::-moz-selection {
-  background: #faeceb; }
-
 /* -----------------------------------------------------------------------------
     Icons
 ----------------------------------------------------------------------------- */
-[class^="icon-"], [class*=" icon-"] {
-  font-size: 24px;
-  -webkit-transition: opacity 150ms ease-out, color 550ms ease-out;
-  -moz-transition: opacity 150ms ease-out, color 550ms ease-out;
-  -o-transition: opacity 150ms ease-out, color 550ms ease-out;
-  transition: opacity 150ms ease-out, color 550ms ease-out; }
-
-body.reddish [class^="icon-"], body.reddish [class*=" icon-"] {
-  color: #fff; }
-
-body.whitish [class^="icon-"], body.whitish [class*=" icon-"] {
-  color: #d24f47; }
-
 /* -----------------------------------------------------------------------------
     Layout
 ----------------------------------------------------------------------------- */
@@ -94,125 +75,13 @@ html {
 
 body {
   font: 200 normal 14px/21px "jaf-facitweb", Helvetica, Arial, sans-serif;
-  -webkit-transition: color ease-out 550ms, background-color ease-out 550ms;
-  -moz-transition: color ease-out 550ms, background-color ease-out 550ms;
-  -o-transition: color ease-out 550ms, background-color ease-out 550ms;
-  transition: color ease-out 550ms, background-color ease-out 550ms;
-  overflow: hidden;
-  top: -200px;
-  left: -35%;
-  height: 100%; }
+  height: 100%;
+  width: 1411px;
+  margin: auto; }
 
-body.reddish {
-  background: #d24f47;
-  color: #fff;
-  border-color: #fff; }
-
-body.whitish {
-  background: #fff;
-  color: #d24f47;
-  border-color: #d24f47; }
-
-/* -----------------------------------------------------------------------------
-    Animation
------------------------------------------------------------------------------ */
-#animation {
-  width: 535px;
-  height: 535px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  overflow: hidden;
-  opacity: 0;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-#animation .spiro1, #animation .spiro2, #animation .spiro3 {
-  display: inline-block;
-  position: absolute;
-  font-size: 535px;
-  opacity: 0.5;
-  background: transparent;
-  -webkit-transition: opacity 1000ms ease-in-out;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-/* -----------------------------------------------------------------------------
-    Content
------------------------------------------------------------------------------ */
 #content {
-  height: 115px;
-  position: absolute;
-  max-width: 380px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10; }
-
-.socials, .contact {
-  margin-top: -4px; }
-
-.socials a {
-  margin-right: 15px; }
-  .socials a:last-child {
-    margin-right: 0; }
-  .socials a:hover {
-    opacity: 0.8; }
-
-/* -----------------------------------------------------------------------------
-    Wind Notice
------------------------------------------------------------------------------ */
-#wind-notice {
-  position: absolute;
-  font-style: italic;
-  font-size: 13px;
-  text-align: center;
-  width: 100vw;
-  bottom: 30px;
-  opacity: 0; }
-
-#wind-notice a {
-  color: inherit;
-  text-decoration: underline; }
-
-/* -----------------------------------------------------------------------------
-    Media Queries
------------------------------------------------------------------------------ */
-@media screen and (max-width: 520px) {
-  #animation {
-    width: 365px;
-    height: 365px; }
-
-  #animation .spiro1, #animation .spiro2, #animation .spiro3 {
-    font-size: 365px; }
-
-  h1 {
-    font-size: 14px; } }
-/* -----------------------------------------------------------------------------
-    Utilitaries
------------------------------------------------------------------------------ */
-.clearfix:after {
-  content: " ";
-  /* Older browser do not support empty content */
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both; }
+  background: url("../images/fake.png") no-repeat;
+  width: 100%;
+  height: 2267px; }
 
 /*# sourceMappingURL=main.css.map */
