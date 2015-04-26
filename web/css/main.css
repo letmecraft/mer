@@ -181,7 +181,8 @@ footer {
   width: 920px;
   margin: auto;
   *zoom: 1;
-  text-align: center; }
+  text-align: center;
+  color: #666; }
   #blabla:before, #blabla:after {
     content: " ";
     display: table; }

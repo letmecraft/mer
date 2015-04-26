@@ -21,10 +21,10 @@ $app->get('/answer/{name}/{answer}', function ($name, $answer) use ($app) {
     $request = $app['request'];
 
     $message = \Swift_Message::newInstance()
-        ->setSubject('[YourSite] Feedback')
-        ->setFrom(array('noreply@yoursite.com'))
+        ->setSubject('Nuova risposta!')
+        ->setFrom(array('taki@martinaeyrenato.com'))
         ->setTo(array('thomas.pob@gmail.com', 'mmaddi@gmail.com'))
-        ->setBody($name + "ha detto" + answer + "!");
+        ->setBody($name + "ha detto" + $answer + "!");
 
     $app['mailer']->send($message);
 
