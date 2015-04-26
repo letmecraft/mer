@@ -72,7 +72,7 @@ $(document).ready(function() {
             }
         })
         .error(function( data ) {
-            $("#carta .msg.success").delay(500).fadeIn(200);
+            $("#carta .msg.error").delay(500).fadeIn(200);
         });
     });
 
