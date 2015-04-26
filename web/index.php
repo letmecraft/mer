@@ -10,16 +10,11 @@ $app['debug'] = true;
 
 $app->register(new Silex\Provider\SwiftmailerServiceProvider());
 
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/views',
-));
 
 /* Routes */
 
 $app->get('/', function() use ($app) {
-    return $app['twig']->render('index.twig', array(
-        
-    ));
+    return getTemplate('./views/index.php');
 });
 
 $app->get('/answer/{name}/{answer}', function ($name, $answer) use ($app) {
@@ -28,8 +23,8 @@ $app->get('/answer/{name}/{answer}', function ($name, $answer) use ($app) {
     $message = \Swift_Message::newInstance()
         ->setSubject('[YourSite] Feedback')
         ->setFrom(array('noreply@yoursite.com'))
-        ->setTo(array('thomas.pob@gmail.com'))
-        ->setBody("lalalal");
+        ->setTo(array('thomas.pob@gmail.com', 'mmaddi@gmail.com'))
+        ->setBody($name + "ha detto" + answer + "!");
 
     $app['mailer']->send($message);
 
@@ -37,3 +32,16 @@ $app->get('/answer/{name}/{answer}', function ($name, $answer) use ($app) {
 });
 
 $app->run();
+
+/* Utilitaries */
+
+function getTemplate($file) {
+
+    ob_start(); // start output buffer
+
+    include $file;
+    $template = ob_get_contents(); // get contents of buffer
+    ob_end_clean();
+    return $template;
+
+}

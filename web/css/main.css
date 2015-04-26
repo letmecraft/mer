@@ -49,7 +49,10 @@ table {
 ----------------------------------------------------------------------------- */
 /* Typography */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #0086E9; }
+  a:hover {
+    text-decoration: underline; }
 
 p, h1 {
   margin-bottom: 15px;
@@ -64,24 +67,158 @@ h1 {
     letter-spacing: 1px; }
 
 /* -----------------------------------------------------------------------------
-    Icons
------------------------------------------------------------------------------ */
-/* -----------------------------------------------------------------------------
     Layout
 ----------------------------------------------------------------------------- */
 html {
-  cursor: pointer;
   height: 100%; }
 
 body {
-  font: 200 normal 14px/21px "jaf-facitweb", Helvetica, Arial, sans-serif;
+  font: 300 normal 16px/21px "open-sans", Helvetica, Arial, sans-serif;
   height: 100%;
-  width: 1411px;
+  background: #fffaf2; }
+
+header, section {
+  width: 1280px;
   margin: auto; }
 
-#content {
-  background: url("../images/fake.png") no-repeat;
+header {
+  height: 200px;
+  text-align: center; }
+  header img {
+    margin-top: 63px; }
+
+footer {
+  width: 1169px;
+  margin: 80px auto 150px auto; }
+
+/* -----------------------------------------------------------------------------
+    Carta
+----------------------------------------------------------------------------- */
+#carta {
+  height: 766px;
+  width: 1169px;
+  margin: auto;
+  display: block;
+  background-image: url("../images/carta.png"), url("../images/cadre.png");
+  background-position: -46px 12px, 0 0;
+  background-repeat: no-repeat;
+  position: relative; }
+
+#carta .content {
+  width: 780px;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  height: 100px;
+  margin-top: -70px;
+  /* account for padding and border if not using box-sizing: border-box; */
+  margin-left: -405px;
+  /* account for padding and border if not using box-sizing: border-box; */ }
+
+#carta svg {
   width: 100%;
-  height: 2267px; }
+  height: 100%; }
+
+#carta svg.nouage {
+  fill: #0086E9; }
+
+#carta p {
+  color: #0086E9;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5px; }
+  #carta p.small {
+    font-size: 15px; }
+
+#carta .msg {
+  display: none;
+  color: #0086E9;
+  width: 500px;
+  margin: auto;
+  padding-top: 45px;
+  line-height: 26px; }
+
+#carta form {
+  width: 280px;
+  margin: auto;
+  margin-top: 20px; }
+
+#carta form input[type="text"] {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border: solid 2px #0086E9;
+  font-size: 18px;
+  padding: 0 5px;
+  margin-bottom: 20px; }
+
+#carta form input[type="button"] {
+  -webkit-appearance: none;
+  width: 132px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  padding: 8px 0px; }
+  #carta form input[type="button"]:hover {
+    cursor: pointer; }
+
+#carta form input[type="button"]:nth-child(3) {
+  background-color: #0086E9;
+  color: #fff;
+  border: solid 2px #0086E9; }
+
+#carta form input[type="button"]:nth-child(2) {
+  background-color: #fff;
+  color: #0086E9;
+  margin-right: 10px;
+  border: solid 2px #0086E9; }
+
+/* -----------------------------------------------------------------------------
+    Blabla
+----------------------------------------------------------------------------- */
+#blabla {
+  width: 920px;
+  margin: auto;
+  *zoom: 1;
+  text-align: center; }
+  #blabla:before, #blabla:after {
+    content: " ";
+    display: table; }
+  #blabla:after {
+    clear: both; }
+
+#blabla h2 {
+  height: 56px;
+  width: 286px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 21px;
+  color: #0086E9;
+  font-weight: 500;
+  padding-top: 21px;
+  background-image: url("../images/h2.jpg"); }
+
+#blabla h2.arg {
+  background-image: url("../images/h2-arg.jpg"); }
+
+#blabla .column {
+  width: 50%;
+  float: left; }
+  #blabla .column p {
+    width: 360px;
+    margin: auto;
+    margin-bottom: 50px; }
+
+#blabla h3 {
+  margin-bottom: 15px; }
+  #blabla h3 svg path, #blabla h3 svg polygon, #blabla h3 svg rect {
+    fill: #0086E9;
+    stroke-width: "4"; }
+
+footer {
+  height: 28px;
+  background: url("../images/ruban.png") repeat-x; }
 
 /*# sourceMappingURL=main.css.map */
