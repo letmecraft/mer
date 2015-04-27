@@ -23,7 +23,7 @@ $app->get('/answer/{name}/{answer}', function ($name, $answer) use ($app) {
     $message = \Swift_Message::newInstance()
         ->setContentType("text/html");
         ->setSubject('Nuova risposta!')
-        ->setFrom(array('taki@martinaeyrenato.com' => 'Taki il cane grande'))
+        ->setFrom(array('taki@martinaeyrenato.com'))
         ->setTo(array('thomas.pob@gmail.com', 'mmaddi@gmail.com'))
         ->setBody($name . "ha detto" . $answer . "!");
 
