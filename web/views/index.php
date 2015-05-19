@@ -5,7 +5,7 @@
         <meta name="robots" content="noindex">
         <title>TITLE</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/        
-        <link rel="icon" type="image/png" href="images/favicon.ico" />
+        <link rel="icon" type="image/png" href="../images/favicon.ico" />
         <script src="//use.typekit.net/kpu6che.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
         <link rel="stylesheet" href="css/main.css">
@@ -66,7 +66,6 @@
                 <a href="https://www.google.ca/maps/place/Via+Provinciale+Regina,+21,+22019+Tremezzo+CO,+Italy/@45.9811597,9.2117205,17z/data=!4m2!3m1!1s0x478422d8216e84af:0xb7e4bf9ab02c0d2a" target="_blank">Google map</a>.
                 El aeropuerto más cercano a la ciudad de Como es el “Malpensa” de Milán. Desde Malpensa pueden tomar un tren a Saronno y ahí cambiar y llegar directamente hasta Como. 
                 También podrían aterrizar en Milano “Linate”, pero en ese caso deberían tomarse un colectivo hasta una estación de trenes de Milán para después tomar un tren hacia Como. Desde Como a Azzano se puede llegar: En auto: 45 minutos. En ferry rápido: 40 minutos (bajar en la parada de Tremezzo). En colectivo: 50 minutos (bajar en la parada de Azzano o Bolvedro) ¡Avisen cuando y como llegan que los iremos a buscar!</p>
-
             </div>
 
             <div class="column">
@@ -99,7 +98,6 @@
                 <p>Via Regina 21.     
                 22010 Azzano (Co)
                 Vedi su <a href="https://www.google.ca/maps/place/Via+Provinciale+Regina,+21,+22019+Tremezzo+CO,+Italy/@45.9811597,9.2117205,17z/data=!4m2!3m1!1s0x478422d8216e84af:0xb7e4bf9ab02c0d2a" target="_blank">Google map</a></p>
-
             </div>
 
         </section>
