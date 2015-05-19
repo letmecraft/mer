@@ -19,8 +19,8 @@
         <section id="carta">
 
             <div class="content">
-                <p class="intro">Vieni al matrimonio? / Venid a las bodas?</p>
-                <p class="intro small">Scrivi il tuo nome e cognome / Escribe tuo nombre y apellido</p>
+                <p class="intro">Vieni al matrimonio? / Venís al casamiento?</p>
+                <p class="intro small">Scrivi il tuo nome e cognome / Escribí tu nombre y apellido</p>
                 <p class="msg error">Oups! Qualcosa non ha funzionato.<br />Contata Martina per confermare la tua presenza: martinaeyrenato@gmail.com</p>
                 <p class="msg success">Grazie! Gracias!</p>
                 <form id="rsvp" method="post">
@@ -43,8 +43,8 @@
                 <?php echo file_get_contents("images/orlogo.svg") ?>
                 </h3>
 
-                <p>Después del brindis, los festejos seguirán hasta la noche. Les aconsejamos reservar con buena anticipación una 
-                habitación en uno de los siguientes hoteles:
+                <p>Después del brindis, los festejos seguirán hasta la noche. 
+                Les aconsejamos reservar con buena anticipación una habitación en uno de los siguientes hoteles: 
                 <a href="http://hotellario.it" target="_blank">Hotel Lario</a>, un 3 estrellas que queda a 50mt.
                 <a href="http://grandhoteltremezzo.com" target="_blank">Grand hotel Tremezzo</a>, un 4 estrellas que queda a 1.3km.
                 <a href="http://villaedy.com" target="_blank">Hotel villa Edy</a>, un 3 estrellas que queda a 300 mt en subida.</p>
@@ -53,9 +53,9 @@
                     <?php echo file_get_contents("images/salvagente.svg") ?>                    
                 </h3>
 
-                <p>Ya que la fiesta se realizará en un jardín, desaconsejamos el uso de tacones.
-                Como es tradición en Azzano, en cualquier momento podríamos terminar todos en el lago, así que recomendamos llevar un traje de baño y un cambio.
-                </p>
+                <p>Ya que la fiesta se realizará en un jardín, desaconsejamos el uso de tacos. 
+                Como es tradición en Azzano, en cualquier momento podríamos terminar todos en el lago, 
+                así que recomendamos llevar un traje de baño y un cambio de ropa.</p>
 
                 <h3>
                     <?php echo file_get_contents("images/compas.svg") ?> 
@@ -63,15 +63,9 @@
 
                 <p>Via Regina 21.     
                 22010 Azzano (Co)
-                <a href="https://www.google.ca/maps/place/Via+Provinciale+Regina,+21,+22019+Tremezzo+CO,+Italy/@45.9811597,9.2117205,17z/data=!4m2!3m1!1s0x478422d8216e84af:0xb7e4bf9ab02c0d2a" target="_blank">Google map</a>
-                El aeropuerto más cercano a la ciudad de Como es el “Malpensa” de Milán. 
-                Desde Malpensa pueden tomar un tren a Saronno y ahí cambiar y llegar directamente hasta Como. 
-                También podrían aterrizar en Milano “Linate”, pero en ese caso deberían tomarse un colectivo hasta una estación de trenes de Milán para después tomar un tren hacia Como.
-                Desde Como a Azzano se puede llegar: 
-                En auto: 45 minutos
-                En ferry rápido: 40 minutos, bajar en la parada de Tremezzo.
-                En colectivo: 50 minutos, bajar en la parada de Azzano o Bolvedro
-                ¡Avisen cuando y como llegan que los iremos a buscar!</p>
+                <a href="https://www.google.ca/maps/place/Via+Provinciale+Regina,+21,+22019+Tremezzo+CO,+Italy/@45.9811597,9.2117205,17z/data=!4m2!3m1!1s0x478422d8216e84af:0xb7e4bf9ab02c0d2a" target="_blank">Google map</a>.
+                El aeropuerto más cercano a la ciudad de Como es el “Malpensa” de Milán. Desde Malpensa pueden tomar un tren a Saronno y ahí cambiar y llegar directamente hasta Como. 
+                También podrían aterrizar en Milano “Linate”, pero en ese caso deberían tomarse un colectivo hasta una estación de trenes de Milán para después tomar un tren hacia Como. Desde Como a Azzano se puede llegar: En auto: 45 minutos. En ferry rápido: 40 minutos (bajar en la parada de Tremezzo). En colectivo: 50 minutos (bajar en la parada de Azzano o Bolvedro) ¡Avisen cuando y como llegan que los iremos a buscar!</p>
 
             </div>
 
