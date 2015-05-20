@@ -229,6 +229,13 @@ footer {
     //&:hover { border-color:solid 2px $light-blue; }
 }
 
+#carta form input[type="button"].disabled {
+    opacity: 0.3;
+    cursor: default;
+
+    &:focus { outline:none; }
+} 
+
 /* -----------------------------------------------------------------------------
     Blabla
 ----------------------------------------------------------------------------- */

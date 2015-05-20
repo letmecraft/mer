@@ -3,9 +3,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="robots" content="noindex">
-        <title>TITLE</title>
+        <title>Martina e/y Renato</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/        
-        <link rel="icon" type="image/png" href="../images/favicon.ico" />
+        <link rel="icon" type="image/png" href="../images/favicon.png" />
         <script src="//use.typekit.net/kpu6che.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
         <link rel="stylesheet" href="css/main.css">
@@ -25,8 +25,8 @@
                 <p class="msg success">Grazie! Gracias!</p>
                 <form id="rsvp" method="post">
                     <input type="text" name="name" />
-                    <input type="button" name="no" value="No" />
-                    <input type="button" name="si" value="Si!" />
+                    <input type="button" name="no" value="No" class="disabled" />
+                    <input type="button" name="si" value="Si!" class="disabled" />
                 </form>
             </div>
         

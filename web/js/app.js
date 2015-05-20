@@ -55,30 +55,51 @@ $(document).ready(function() {
         //nouage.append(f);
     }); */
 
-    $("#rsvp input[type=button]").click(function(e) {
-        e.preventDefault();
-        var answer = $(this).val();
-        var name = $("#rsvp input[type=text]").val();
+    $("#rsvp input[type=text]").keypress(function(e) {
+        if($(this).val() != "" && $(this).val() != undefined) {
+            $("#rsvp input[type=button]").removeClass("disabled");
+        } else {
+            $("#rsvp input[type=button]").addClass("disabled");
+        }
+    });
 
-        $("#carta #rsvp, #carta .intro").fadeOut(500);
+    $("#rsvp input[type=text]").focusout(function(e) {
+        console.log($(this).value);
+        if($(this).val() != "" && $(this).val() != undefined) {
+            $("#rsvp input[type=button]").removeClass("disabled");
+        } else {
+            $("#rsvp input[type=button]").addClass("disabled");
+        }
+    });
+
+    $("#rsvp input[type=button]").click(function(e) {
         
-        $.ajax({
-            url: "/answer/" + name + "/" + answer,
-        })
-        .done(function( data ) {
-            if ( console && console.log ) {
-                console.log( "Sample of data:", data);
-                $("#carta .msg.success").delay(500).fadeIn(200);
-            }
-        })
-        .error(function( data ) {
-            $("#carta .msg.error").delay(500).fadeIn(200);
-        });
+        if(!$(this).hasClass("disabled")) {
+
+            e.preventDefault();
+            var answer = $(this).val();
+            var name = $("#rsvp input[type=text]").val();
+
+            $("#carta #rsvp, #carta .intro").fadeOut(500);
+            
+            $.ajax({
+                url: "/answer/" + name + "/" + answer,
+            })
+            .done(function( data ) {
+                if ( console && console.log ) {
+                    console.log( "Sample of data:", data);
+                    $("#carta .msg.success").delay(500).fadeIn(200);
+                }
+            })
+            .error(function( data ) {
+                $("#carta .msg.error").delay(500).fadeIn(200);
+            }); 
+        }
     });
 
     function random(min,max)
-{
-    return Math.floor(Math.random()*(max-min+1)+min);
-}
+    {
+        return Math.floor(Math.random()*(max-min+1)+min);
+    }
 
 })
