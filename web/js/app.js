@@ -55,8 +55,9 @@ $(document).ready(function() {
         //nouage.append(f);
     }); */
 
-    $("#rsvp input[type=text]").keypress(function(e) {
+    $("#rsvp input[type=text]").keyup(function(e) {
         if($(this).val() != "" && $(this).val() != undefined) {
+            console.log($(this).val());
             $("#rsvp input[type=button]").removeClass("disabled");
         } else {
             $("#rsvp input[type=button]").addClass("disabled");
