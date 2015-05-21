@@ -24,7 +24,7 @@ $app->get('/answer/{name}/{answer}', function ($name, $answer) use ($app) {
         ->setContentType("text/html")
         ->setSubject('Nuova risposta!')
         ->setFrom(array('taki@martinaeyrenato.com' => 'Taki il cane grande'))
-        ->setTo(array('thomas.pob@gmail.com', 'martinaeyrenato@gmail.com'))
+        ->setTo(array('thomas.pob@gmail.com', 'martinaeyrenato@gmail.com', 'mmaddi@gmail.com'))
         ->setBody("<b>".$name . "</b> ha detto <b>" . $answer . "</b>!");
 
     $app['mailer']->send($message);
