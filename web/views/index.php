@@ -89,7 +89,7 @@
                 </h3>
 
                 <p>Visto che la festa si realizzerà in giardino, sconsigliamo l’uso di tacchi. 
-                Come da tradizione ad Azzano, in qualsiasi momento potremmo finire tutti nel lago, quindi portatevi un costume da bagno e un cambio! (diseguinio costume e frase carina potrebbe bastare)</p>
+                Come da tradizione ad Azzano, in qualsiasi momento potremmo finire tutti nel lago, quindi portatevi un costume da bagno e un cambio!</p>
 
                 <h3>
                     <?php echo file_get_contents("images/compas.svg") ?> 
