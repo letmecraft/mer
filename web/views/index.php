@@ -45,7 +45,7 @@
 
                 <p>Después del brindis, los festejos seguirán hasta la noche. 
                 Les aconsejamos reservar con buena anticipación una habitación en uno de los siguientes hoteles: 
-                <a href="http://hotellario.it" target="_blank">Hotel Lario</a>, un 3 estrellas que queda a 50mt.
+                <a href="http://www.hotellario.it" target="_blank">Hotel Lario</a>, un 3 estrellas que queda a 50mt.
                 <a href="http://grandhoteltremezzo.com" target="_blank">Grand hotel Tremezzo</a>, un 4 estrellas que queda a 1.3km.
                 <a href="http://villaedy.com" target="_blank">Hotel villa Edy</a>, un 3 estrellas que queda a 300 mt en subida.</p>
 
@@ -79,7 +79,7 @@
                 <p>Dopo il brindisi, i festeggiamenti proseguiranno
                 fino a tarda serata. 
                 Vi consigliamo di riservare un hotel nelle vicinanze. 
-                Il piu vicino è <a href="http://hotellario.it" target="_blank">l’Hotel Lario</a>, a 50 mt.
+                Il piu vicino è <a href="http://www.hotellario.it" target="_blank">l’Hotel Lario</a>, a 50 mt.
                 Altre possibilità sono:
                 <a href="http://grandhoteltremezzo.com" target="_blank">Grand hotel Tremezzo</a> a 1.3 km e
                 <a href="http://villaedy.com" target="_blank">Hotel villa Edy</a> a 500mt</p>
